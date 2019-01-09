@@ -47,4 +47,8 @@ class TelloController:
     def right(self, cm):
         self.tello.do(f"right {cm}")
 
+    # flip
+    def left_flip(self):
+        self.tello.do(f"")
+
 

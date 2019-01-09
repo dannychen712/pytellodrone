@@ -28,7 +28,7 @@ while True:
             if choice_array[0] == "u":
                 tello.up(int(choice_array[1]))
             elif choice_array[0] == "d":
-                tello.down(int(choice_array[0]))
+                tello.down(int(choice_array[1]))
             else:
                 print("\n Please use the proper format\n")
                 continue
@@ -50,8 +50,6 @@ while True:
     except ValueError:
         print("points must be a number\n")
         continue
-
-print(points, distance)
 
 
 # distance of 180 can fit in my living room
