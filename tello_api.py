@@ -28,7 +28,6 @@ class TelloApi:
         while True:
             data, server = self.sock.recvfrom(1518)
             self.message = data.decode(encoding="utf-8")
-            print(self.message)
             self.new_message = True
 
     def do(self, message):
